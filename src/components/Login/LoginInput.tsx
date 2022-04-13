@@ -1,13 +1,19 @@
 import 'antd/dist/antd.css';
 import { Input } from 'antd';
+import styled from "styled-components";
 
 
-const Logininput = (props: any) =>{
+const InputDiv = styled.div`
+padding-top: 20px;
+`
+
+const Logininput = (props: {text: string, type: string, id: string}) =>{
     return(
-        <div >
-            <label htmlFor='text'>Tên đăng nhập</label>
-            <Input style={{ width: 400, margin: '100px auto' }} type={props.text} id='text' required />
-        </div>
+        <InputDiv >
+            <label>{props.text}</label>
+            < br/>
+            <Input type={props.type} id={props.id} required />
+        </InputDiv>
     )
 }
 
