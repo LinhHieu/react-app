@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(175.8deg, #2ECF94 -102.43%, #3DBEA3 100.22%);

@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import 'antd/dist/antd.css';
+import { Form, Input, Button, Checkbox } from 'antd';
 
 export const MyIcon = styled.div`
     text-align: center;
@@ -12,7 +14,7 @@ export const MyIcon = styled.div`
 
 `;
 
-export const StyledBox = styled.div`
+export const StyledBox = styled.form`
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
