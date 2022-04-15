@@ -1,20 +1,16 @@
 import 'antd/dist/antd.css';
-import { Input } from 'antd';
-import styled from "styled-components";
-import {useRef} from 'react';
+import { Input, InputRef } from 'antd';
+import { InputDiv } from "../styledcss/login.styled";
 
-const InputDiv = styled.div`
-padding-top: 20px;
-`
 
-const Logininput: React.FC<{text: string, type: string, id: string, refProp: React.RefObject<HTMLInputElement>, handleState: (e:React.ChangeEvent<HTMLInputElement>) => void}> = (props) =>{
-
+const Logininput: React.FC<{placeholder:string, text: string, type: string, id: string, refProps: React.Ref<InputRef>}> = (props) =>{
+    
 
     return(
         <InputDiv >
             <label>{props.text}</label>
             < br/>
-            <Input type={props.type} id={props.id} required ref={props.refProp as any} />
+            <Input type={props.type} id={props.id} placeholder={props.placeholder} required ref={props.refProps as React.Ref<InputRef>} />
         </InputDiv>
     )
 }

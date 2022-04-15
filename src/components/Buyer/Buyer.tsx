@@ -1,7 +1,7 @@
 const Buyer = () => {
     return (
         <div>
-            <a>Buyer management</a>
+            Buyer management
         </div>
     )
 }

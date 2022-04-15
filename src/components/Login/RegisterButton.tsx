@@ -1,10 +1,8 @@
 import { StyledRegisterButton } from "../styledcss/login.styled";
 
-const RegisterButton = () => {
+const RegisterButton: React.FC<{text: string}>  = (props) => {
     return (
-        <StyledRegisterButton style ={{textAlign:"center"}}>
-            <a href="#" >REGISTER NEW ACCOUNT</a>
-        </StyledRegisterButton>
+        <StyledRegisterButton >{props.text}</StyledRegisterButton>
     )
     
 

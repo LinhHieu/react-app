@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import 'antd/dist/antd.css';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Checkbox } from "antd";
 
 export const MyIcon = styled.div`
     text-align: center;
@@ -24,7 +24,6 @@ export const StyledBox = styled.form`
     position: absolute;
     margin: auto;
     width: 36%;
-    height: 430px;
     left: 32%;
     top: 200px;
     background: #FFFFFF;
@@ -41,10 +40,16 @@ export const StyledBox = styled.form`
         align-items: center;
     }`;
 
+
 export const CheckBoxAndForgotButton = styled.div`
     padding-top: 20px;
     justify-content: space-between;
     display: flex;
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #2ECF94;
+        border-color: #2ECF94;
+        outline: none;
+    }
 
     a{
         color: #2ECF94;
@@ -53,7 +58,7 @@ export const CheckBoxAndForgotButton = styled.div`
 
 export const StyledLoginFooter = styled.div`
    color: #FFFFFF;
-   padding-top: 700px;
+   padding-top: 500px;
    text-align: center;
    a{
     color: #FFFFFF;
@@ -65,11 +70,27 @@ export const StyledLoginFooter = styled.div`
 export const StyledRegisterButton = styled.div`
     padding-top: 20px;
     text-align: center; 
-    a {
-        color: #2ECF94;
-    }
+    color: #2ECF94;
+
 `
 
 export const SubmitButtonDiv = styled.div`
-padding-top: 20px;
+    padding-top: 20px;
+    .ant-btn-primary {
+        border-color: #2ECF94;
+    }
+`
+
+export const InputDiv = styled.div`
+    padding-top: 20px;
+    .ant-input {
+        outline: none;
+    }
+    .ant-input:focus{
+        border-color: #2ECF94;
+    }
+    .ant-input:hover{
+        border-color: #2ECF94;
+    }
+      
 `
